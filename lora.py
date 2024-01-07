@@ -2,8 +2,6 @@ from sx1262 import SX1262
 from machine import Pin
 from time import sleep
 import machine
-# Constants
-machine.freq(80000000)
 
 # LoRa initialization
 sx = SX1262(spi_bus=2, clk=40, mosi=41, miso=38, cs=9, irq=45, rst=17, gpio=13)
